@@ -1,0 +1,29 @@
+[debug] [2021-01-31T09:06:59.842Z] ----------------------------------------------------------------------
+[debug] [2021-01-31T09:06:59.844Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ابو ماهر\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-01-31T09:06:59.845Z] CLI Version:   9.2.2
+[debug] [2021-01-31T09:06:59.845Z] Platform:      win32
+[debug] [2021-01-31T09:06:59.845Z] Node Version:  v12.18.3
+[debug] [2021-01-31T09:06:59.845Z] Time:          Sun Jan 31 2021 11:06:59 GMT+0200 (Eastern European Standard Time)
+[debug] [2021-01-31T09:06:59.846Z] ----------------------------------------------------------------------
+[debug] [2021-01-31T09:06:59.846Z] 
+[debug] [2021-01-31T09:06:59.854Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-31T09:06:59.855Z] > authorizing via signed-in user
+[debug] [2021-01-31T09:06:59.855Z] [iam] checking project clone-6807d for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-01-31T09:06:59.860Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-01-31T09:06:59.861Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-31T09:07:00.664Z] <<< HTTP RESPONSE 200 {"date":"Sun, 31 Jan 2021 21:07:10 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-31T09:07:00.699Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-6807d:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-01-31T09:07:03.271Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 31 Jan 2021 21:07:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=695","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-31T09:07:03.273Z] > refreshing access token with scopes: []
+[debug] [2021-01-31T09:07:03.273Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-31T09:07:04.198Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sun, 31 Jan 2021 21:07:14 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-31T09:07:04.256Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-6807d [none]
+[debug] [2021-01-31T09:07:14.510Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/clone-6807d
+[debug] [2021-01-31T09:07:14.819Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/clone-6807d
+    at Client.doRequest (C:\Users\ابو ماهر\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:194:19)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[error] 
+[error] Error: Failed to get Firebase project clone-6807d. Please make sure the project exists and your account has permission to access it.
